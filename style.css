@@ -48,13 +48,13 @@
   }
   
   body {
-    background-image: url("https://springboard-cdn.appadvice.com/wp-content/appadvice-v2-media/2016/11/Netflix-background_860c8ece6b34fb4f43af02255ca8f225.jpg");
-    /* Replace the existing background-image URL with the local file path */
-    background-image: url("file:///C:/Users/rkvai/Downloads/Netflix-background_860c8ece6b34fb4f43af02255ca8f225.jpg");
-
-    background-color: hsl(235, 24%, 19%);
+    background-image: url("image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
+    backdrop-filter: blur(1.5px);
+    z-index: -10;
   }
   
   #navbar {
@@ -392,7 +392,7 @@
   
   .new-search-input input {
     position: relative;
-    width: 70%;
+    width: 80%;
     padding: 10px 0px;
     height: 60%;
     background-color: transparent;
@@ -470,7 +470,7 @@
     margin-top: 5px;
     width: 100%;
     margin-left: 10px;
-    color: hsl(234, 100%, 50%);
+    color: hsl(241, 100%, 36%);
     font-size: 1.3rem;
     font-weight: bolder;
   }
@@ -485,7 +485,7 @@
   
   .button {
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-radius: 10px;
     text-decoration: underline;
   }
@@ -506,7 +506,7 @@
   }
   
   .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all ease-in-out 0.45s;
     cursor: pointer;
   }
@@ -528,6 +528,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-top: -0.5rem;
     margin-left: 10px;
     color: hsl(234, 54%, 30%);
   }
